@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cart-items">
+        <!-- Selected items will be appended here -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Order Inn</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+            <link rel="stylesheet" href="style1.css">
+        </head>
+        <body class="mx-5">
+            <script>
+                alert("View your cart!!");
+            </script>
+            <!-- nav -->
+            <header class="py-3">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fw-bold" href="#">
+                        Order Inn
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index1.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" href="index2.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="index3.html">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="index4.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="cart.html" class="nav-link">View Cart</a>
+                            </li>
+
+                        </ul>
+                        <div class="fw-semibold d-flex align-items-center">
+                            <div class="price">
+                                <span>
+                                    ₹1100.00
+                                </span>
+                            </div>
+                            <div class="mycard rounded-pill ms-3 position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="position-absolute rounded-pill">
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- main -->
+            <main>
+                <div class="product-details container-fluid position-relative p-5">
+                    <div class="background position-absolute h-75 w-100 rounded-5"></div>
+                    <header class="d-flex  align-items-center mb-3">
+                        <div class="me-auto fs-7 fw-semibold">
+                            <span class="text-light">Home</span>
+                            <span>/</span>
+                            <span>View your products</span>
+                        </div>
+                        <div class="m-auto">
+                            <h2 class="fw-semibold">
+                                View your products
+                            </h2>
+                        </div>
+                        <div class="ms-auto">
+                            <a href="index3.html">
+                            <button class="prevBtn bg-transparent border-0 me-4">
+                                <span>Prev</span>
+                            </a>
+                                <i class="fa-solid fa-arrow-left-long ms-2"></i>
+        
+                            </button>
+                            <a href="index1.html">
+                            <button class="nextBtn bg-transparent border-0 ms-4">
+                                <i class="fa-solid fa-arrow-right-long me-2"></i>
+                                <span>Next</span>
+                            </a>
+                            </button>
+                        </div>
+    </div>
+</body>
+<!-- add -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Get the cart items container
+    const cartItemsContainer = document.getElementById('cart-items');
+
+    // Retrieve cart items from localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (cart.length > 0) {
+        cart.forEach(item => {
+            // Create an element to display the cart item
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item');
+
+            // Add the image and price to the element
+            itemElement.innerHTML = `
+                <img src="${item.image}" alt="Product Image" style="width:100px; height:auto;">
+                <p>${item.price}</p>
+            `;
+
+            // Append the item to the cart items container
+            cartItemsContainer.appendChild(itemElement);
+        });
+    } else {
+        // Display a message if the cart is empty
+        cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    }
+});
+
+</script>
+<div id="cart-items">
+    <!-- Selected items will be appended here -->
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cart-items">
+        <!-- Selected items will be appended here -->
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the cart items container
+        const cartItemsContainer = document.getElementById('cart-items');
+
+        // Retrieve cart items from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (cart.length > 0) {
+            cart.forEach((item, index) => {
+                // Create an element to display the cart item
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+
+                // Add the image, price, and remove button to the element
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="Product Image" style="width:100px; height:auto;">
+                    <p>${item.price}</p>
+                    <button class="remove-btn" data-index="${index}">Remove</button>
+                `;
+
+                // Append the item to the cart items container
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            // Attach event listeners to the remove buttons
+            const removeButtons = document.querySelectorAll('.remove-btn');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemIndex = this.getAttribute('data-index');
+
+                    // Remove the item from the cart array
+                    cart.splice(itemIndex, 1);
+
+                    // Update localStorage with the new cart array
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // Reload the page to reflect the changes
+                    location.reload();
+                });
+            });
+        } else {
+            // Display a message if the cart is empty
+            cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>'
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the cart items container
+        const cartItemsContainer = document.getElementById('cart-items');
+
+        // Retrieve cart items from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (cart.length > 0) {
+            cart.forEach((item, index) => {
+                // Create an element to display the cart item
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+
+                // Append the item to the cart items container
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            // Attach event listeners to the remove buttons
+            const removeButtons = document.querySelectorAll('.remove-btn');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemIndex = this.getAttribute('data-index');
+
+                    // Remove the item from the cart array
+                    cart.splice(itemIndex, 1);
+
+                    // Update localStorage with the new cart array
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // Reload the page to reflect the changes
+                    location.reload();
+                });
+            });
+        } else {
+            // Display a message if the cart is empty
+            cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        }
+    });
+</script>
+
+    <div id="cart-items">
+        <!-- Selected items will be appended here -->
+    </div>
+    <h2>Total Price: ₹<span id="total-price">0</span></h2>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the cart items container and total price element
+        const cartItemsContainer = document.getElementById('cart-items');
+        const totalPriceElement = document.getElementById('total-price');
+
+        // Retrieve cart items from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        let totalPrice = 0;
+
+        if (cart.length > 0) {
+            cart.forEach((item, index) => {
+                // Create an element to display the cart item
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+
+                // Add the image, price, and remove button to the element
+                //  itemElement.innerHTML = `
+                //     <img src="${item.image}" alt="Product Image" style="width:100px; height:auto;">
+                //     <p>Price: ₹${item.price}</p>
+                //     <button class="remove-btn" data-index="${index}">Remove</button>
+                // `;
+
+                // Append the item to the cart items container
+                cartItemsContainer.appendChild(itemElement);
+
+                // Add item price to total
+                totalPrice += parseFloat(item.price);
+            });
+
+            // Attach event listeners to the remove buttons
+            const removeButtons = document.querySelectorAll('.remove-btn');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const itemIndex = this.getAttribute('data-index');
+
+                    // Remove the item from the cart array
+                    cart.splice(itemIndex, 1);
+
+                    // Update localStorage with the new cart array
+                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                    // Reload the page to reflect the changes
+                    location.reload();
+                });
+            });
+        } else {
+            // Display a message if the cart is empty
+            cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+        }
+
+        // Update the total price element
+        totalPriceElement.textContent = totalPrice.toFixed(2);
+    });
+</script>
+</body>
+</html>
+
+
