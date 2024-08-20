@@ -17,7 +17,8 @@ Secure Checkout: Our checkout process is fast, safe, and secure.
 User Registration and Login: Create an account to track your orders, save favorite products, and manage your profile.
 Contact Us: Reach out to our support team via email or phone for any inquiries.
 
-Technology Stack
+Technology Stack:
+
 Frontend: HTML, CSS, JavaScript;
 
 Clone the repository:
